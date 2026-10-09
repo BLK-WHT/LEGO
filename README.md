@@ -1,4 +1,27 @@
+<div align="center">
+
 # LEGO: Synergizing Expert GraphRAG and Expert Chain-of-Thought for Legal Reasoning
+
+[![arXiv](https://img.shields.io/badge/arXiv-2609.27009-b31b1b.svg)](https://arxiv.org/abs/2609.27009)
+[![EMNLP 2026 Findings](https://img.shields.io/badge/EMNLP_2026-Findings-1f6feb.svg)](https://2026.emnlp.org/)
+[![Paper](https://img.shields.io/badge/Paper-PDF-2ea44f.svg)](assets/LEGO_paper.pdf)
+[![Poster](https://img.shields.io/badge/Poster-PDF-orange.svg)](assets/LEGO_poster_A0.pdf)
+[![License](https://img.shields.io/badge/License-Apache_2.0-lightgrey.svg)](LICENSE)
+
+</div>
+
+Official code and data for **LEGO**, accepted to *Findings of the Association for
+Computational Linguistics: EMNLP 2026*.
+
+LEGO couples two expert-guided modules. **ExpertGraphRAG** routes a query through
+an expert Civil Code graph and selects the provisions to read with a greedy,
+coverage-aware objective; **ExpertCoT** then reasons over them as a
+Provision–Fact–Conclusion syllogism.
+
+## News
+
+- **[2026-09]** The paper is on [arXiv](https://arxiv.org/abs/2609.27009).
+- **[2026-08]** LEGO is accepted to Findings of EMNLP 2026.
 
 ## Requirements
 
@@ -68,6 +91,33 @@ data/
   items.jsonl        723 questions
   civil_code.jsonl   1,260 articles
   graph/             the expert provision graph
+assets/
+  LEGO_paper.pdf       the paper
+  LEGO_poster_A0.pdf   the poster
 run.py           entry point for both methods
+```
+
+## Citation
+
+```bibtex
+@inproceedings{chen-etal-2026-lego,
+    title = "{LEGO}: Synergizing Expert {GraphRAG} and Expert Chain-of-Thought for Legal Reasoning",
+    author = "Chen, Qingjing  and
+      Zhang, Junkai  and
+      Wang, Shaochun  and
+      Ding, Jiahao  and
+      Zheng, Siyuan  and
+      Yan, Yukun  and
+      Zheng, Zhi  and
+      Rotolo, Antonino  and
+      Liu, Yun  and
+      Shen, Weixing",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2026",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://arxiv.org/abs/2609.27009",
+}
 ```
 
